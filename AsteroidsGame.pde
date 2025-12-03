@@ -29,6 +29,11 @@ public void draw() {
     }
     if (key == 'w') {
       hello.accelerate(0.2);
-    }
   }
+  }
+}
+
+void keyReleased(){
+  if (key == 'h')
+  hello.hyperspace();
 }
