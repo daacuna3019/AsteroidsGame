@@ -31,7 +31,7 @@ public void draw() {
   (float)hello.getx(),        
   (float)hello.gety()        
 );
-    System.out.println(d);
+
     if(d < 60){
     cool.remove(i);
     }
