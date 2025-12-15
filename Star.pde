@@ -10,20 +10,10 @@ Star(){
   size = (int) (Math.random() * 4) + 4;
   xSpeed = 1;
 }
-void polygon(float x, float y, float radius, int npoints) {
-  float angle = TWO_PI / npoints;
-  beginShape();
-  for (float a = 0; a < TWO_PI; a += angle) {
-    float sx = x + cos(a) * radius;
-    float sy = y + sin(a) * radius;
-    vertex(sx, sy);
-  }
-  endShape(CLOSE);
-}
 public void show(){
   noStroke();
   fill((int) (Math.random() * 225), (int) (Math.random() * 225), (int) (Math.random() * 225));
-  polygon(x, y, size -  3, size);
+  ellipse(x, y, size, size);
 }
 public void move(){
     if (x > width)
